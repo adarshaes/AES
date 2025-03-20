@@ -200,7 +200,7 @@ const Home = () => {
             <Col md={6} className="text-center">
               <div className="position-relative">
                 <img
-                  src="C:\Users\Dell\Desktop\AES\client\src\images\us.JPG"
+                  src={`${process.env.PUBLIC_URL}/images/us.JPG`}
                   alt="School"
                   className="img-fluid rounded shadow"
                   style={{
@@ -273,7 +273,7 @@ const Home = () => {
             {/* Image with Polygon Shape + Achievements */}
             <Col md={6} className="text-center">
               <img
-                src="https://scontent.fbir1-1.fna.fbcdn.net/v/t39.30808-6/474977427_1001788998636069_4168514795092841665_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hNlQL9gTdooQ7kNvgFFu9VV&_nc_oc=AdgSJ5JuQsIxi2npQZOQ9hVGUsVx_ojLfPRuWoqghSDVcUuO95UmrRurd4oWzlcj7yhZB2FEZlvMhpEQXgcsbnmx&_nc_zt=23&_nc_ht=scontent.fbir1-1.fna&_nc_gid=ALxT7JVLS7S3aXWwmgGXfNd&oh=00_AYDZUJJNpszAXC26Fclo5yQKgoDVU6Agz7RStRYZVtcXeQ&oe=67C7A64A"
+                src={`${process.env.PUBLIC_URL}/images/474777105_1001789491969353_5529262387754469366_n.jpg`}
                 alt="Achievements"
                 className="img-fluid rounded shadow"
                 style={{
@@ -345,7 +345,7 @@ const Home = () => {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: "15px" }}>
               {/* Row 1 */}
               <div style={{ transform: "skew(-20deg)", overflow: "hidden", width: "180px", height: "200px", borderRadius: "10px" }}>
-                <img src="https://scontent.fbir1-1.fna.fbcdn.net/v/t39.30808-6/474977427_1001788998636069_4168514795092841665_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hNlQL9gTdooQ7kNvgFFu9VV&_nc_oc=AdgSJ5JuQsIxi2npQZOQ9hVGUsVx_ojLfPRuWoqghSDVcUuO95UmrRurd4oWzlcj7yhZB2FEZlvMhpEQXgcsbnmx&_nc_zt=23&_nc_ht=scontent.fbir1-1.fna&_nc_gid=ALxT7JVLS7S3aXWwmgGXfNd&oh=00_AYDZUJJNpszAXC26Fclo5yQKgoDVU6Agz7RStRYZVtcXeQ&oe=67C7A64A" alt="Gallery" style={{ width: "100%", height: "100%" }} />
+                <img src={`${process.env.PUBLIC_URL}/images/474977427_1001788998636069_4168514795092841665_n.jpg`} alt="Gallery" style={{ width: "100%", height: "100%" }} />
               </div>
               <div style={{ width: "200px", height: "200px", borderRadius: "10px" }}>
                 <img src="https://scontent.fbir1-1.fna.fbcdn.net/v/t39.30808-6/481692581_1026728802808755_7015122239752536789_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=60dzRmr9EdsQ7kNvgHtDsjz&_nc_oc=AdkEpLbTeyn1zE2jPb6Z57O-R9xLnmtk0lV1W3aPwjeiOjQoYJWrIoYRZ9nMeJfkgK0jGlRnsskHPt0FbcxPqxug&_nc_zt=23&_nc_ht=scontent.fbir1-1.fna&_nc_gid=NLB1E4jGiJQ_cHfeYl_m8Q&oh=00_AYEkupx7OcOBCjjRSHT_hWDPNmXJwiz4uY4wSeZ0Xgs0kA&oe=67E1CAF2" alt="Gallery" style={{ width: "100%", height: "100%" }} />

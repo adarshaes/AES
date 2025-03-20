@@ -16,117 +16,126 @@ const OurTeam = () => {
       name: "Sahil Jogi",
       role: "Developer of this website",
       Address: "Aaitabare",
-           profilePic: "",
+           profilePic: "/images/sahil.JPG",
     },
     {
       name: "Amit katuwal",
-      role: "student",
+      role: "Assistant Dev",
       Address: "Bargacchi",
-           profilePic: "",
+           profilePic: "/images/Tikadev.JPG",
     },
     {
       name: "Shisir Magar",
       role: "student",
       Address: "Santi chock",
-           profilePic: "",
+           profilePic: "/images/shisir.JPG",
     },
     {
       name: "Heaven Bhandari",
       role: "Assistant Developer",
       Address: "Adarsha tole",
-           profilePic: "",
+           profilePic: "/images/Heaven.JPG",
     },
     {
       name: "Yugal Limbu",
       role: "student",
       Address: "Sukra bare",
-           profilePic: "",
+           profilePic: "/images/Yugal.JPG",
     },
     {
       name: "Sushant Limbu",
       role: "student",
       Address: "Bargacchi",
-           profilePic: "",
+           profilePic: "/images/Sushant.JPG",
     },
     {
       name: "Rijan Limbu",
       role: "student",
       Address: "Jahada",
-           profilePic: "",
+           profilePic: "/images/rijan.JPG",
     },
     {
       name: "Abish Tamang",
       role: "student",
       Address: "Aaitabare",
-           profilePic: "",
+           profilePic: "/images/Abish.JPG",
     },
     {
       name: "Sanjeip Giri",
       role: "student",
       Address: "Adarsha tole",
-           profilePic: "",
+           profilePic: "/images/sanjib.JPG",
     },
     {
       name: "Dipsal Magar",
       role: "student",
       Address: "Aaitabare",
-           profilePic: "",
+           profilePic: "/images/Dipsal.JPG",
     },
     {
       name: "Sanjok rai",
       role: "student",
       Address: "Galetole",
-           profilePic: "",
-    },
-    {
-      name: "Abish Tamang",
-      role: "student",
-      Address: "Aaitabare",
-           profilePic: "",
+           profilePic: "/images/sanjok.JPG",
     },
     {
       name: "Nuwakccha Rai",
       role: "student",
       Address: "Jahada",
-           profilePic: "",
+           profilePic: "/images/Nuwakchha.JPG",
     },
     {
       name: "Albina Rai",
       role: "student",
       Address: "Aaitabare",
-           profilePic: "",
+           profilePic: "/images/Albina.JPG",
     },
     {
       name: "Binu Magar",
       role: "student",
       Address: "Bargacchi",
-           profilePic: "",
+           profilePic: "/images/Binu.JPG",
     },
     {
       name: "Rabina Timsina",
       role: "student",
       Address: "Bargacchi",
-           profilePic: "",
+           profilePic: "/images/Rabina.JPG",
     },
     {
       name: "Jenisha Raut",
       role: "student",
       Address: "Kanepokhari",
-           profilePic: "",
+           profilePic: "/images/Jenisha.JPG",
     },
     {
       name: "Mahima uparkoti",
       role: "student",
       Address: "Bargacchi",
-      profilePic: "",
+      profilePic: "/images/Mahima.JPG",
     },
     {
       name: "Sadhana Ban",
       role: "student",
       Address: "Jahada",
-      profilePic: "",
+      profilePic: "/images/sadhana.JPG",
     },
   ];
+
+  // Handle closing the review box (Modal)
+  const handleCloseReviewBox = () => {
+    setShowReviewBox(false);
+  };
+
+  // Handle submitting the review
+  const handleSubmitReview = () => {
+    setLoading(true);
+    // You can replace this with the logic for submitting the review
+    // For now, we'll just log the review and rating to the console.
+    console.log("Review Submitted:", { selectedMember, review, rating });
+    setLoading(false);
+    setShowReviewBox(false); // Close the review box after submitting
+  };
 
   const containerStyle = {
     backgroundColor: "#00204a",
@@ -216,8 +225,8 @@ const OurTeam = () => {
               style={profilePicStyle}
             />
             <h2 style={memberNameStyle}>{member.name}</h2>
-            <p style={textStyle}>Experience: {member.experience}</p>
-            <p style={textStyle}>Contact: {member.contact}</p>
+            <p style={textStyle}>Experience: {member.role}</p>
+            <p style={textStyle}>Contact: {member.Address}</p>
           </div>
         ))}
       </div>
